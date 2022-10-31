@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas com arquivos</title>
+    <style>
+        @font-face {
+            font-family: 'Athena';
+            src: url('fonts/Athena Rustic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        h1 {
+            font-family: 'Athena';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando fontes externas com arquivos</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea praesentium possimus doloremque expedita fugit ad atque sapiente cupiditate aliquam nostrum aspernatur pariatur excepturi rerum beatae ab dignissimos, quibusdam placeat suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti iusto alias. Vitae quae doloribus iusto culpa non, vero reiciendis natus. Libero voluptas autem eius doloribus facilis ducimus enim totam.</p>
+</body>
+</html>
