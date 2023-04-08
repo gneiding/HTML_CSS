@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam consequatur placeat distinctio voluptatibus saepe? Qui esse, libero cupiditate nisi ipsam voluptatem cum ipsum debitis doloremque veniam repudiandae itaque, provident amet?</p>
+    <ul>
+        <!--Para o link ser aberto dentro do iframe, deve-se colocar o target na âncora com o
+        mesmo nome dado ao iframe-->
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid est accusantium quam eaque accusamus aliquam ratione quaerat maxime, adipisci non placeat voluptatem, ipsum quas consequatur consequuntur assumenda suscipit, aspernatur blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium repudiandae illum, accusamus consectetur beatae eveniet eos! Accusantium maxime eum reprehenderit explicabo nobis repudiandae quo labore, odio eligendi totam eaque!</p>
+    <iframe src="" frameborder="0" id="tela" name="frame" srcdoc="<h2>Escolha uma das opções acima</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia exercitationem assumenda ipsam vel nihil corporis dicta. Commodi eaque, porro quas voluptas quo perspiciatis? Dignissimos deserunt error reiciendis natus cumque.</p>">
+        <p>Infelizmente seu navegadornão é compatível com iframe</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam nisi animi reiciendis et deserunt optio minus repudiandae numquam aspernatur voluptas eius praesentium, a perferendis dolore ducimus aliquid, iusto facilis laudantium?</p>
+</body>
+</html>
