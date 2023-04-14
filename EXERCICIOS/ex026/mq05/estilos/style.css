@@ -19,7 +19,7 @@ header h1 {
 }
 
 menu {
-    display:block;
+    display:none;
 }
 
 menu ul {
@@ -60,4 +60,19 @@ article p {
     margin-bottom: 20px;
     text-indent: 20px;
 
+}
+
+span#burger{
+    display: block;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+span#burger:hover {
+    color: black;
+    background-color: white;
 }
