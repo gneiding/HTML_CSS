@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Media Query</title>
+</head>
+<body onresize="mudaTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu">            
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore culpa deserunt provident at earum fuga voluptatem illo cupiditate enim ipsam praesentium maiores delectus id qui voluptatum totam, hic officiis inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ex eum, quaerat ea dolore nisi sequi eligendi, id ad illo expedita cupiditate repellat nulla inventore? Voluptas cum possimus maiores voluptates.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad adipisci nulla molestias, facere necessitatibus quas sequi nisi libero laudantium consequatur numquam aspernatur eos explicabo exercitationem! Ipsum excepturi corrupti eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, reprehenderit accusantium, vitae dignissimos praesentium exercitationem ipsum maxime explicabo maiores nulla cupiditate tempore doloribus nisi iste, debitis dolore optio? Quia, quis?</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt amet repellat accusantium! Voluptatem quam ab explicabo molestias, dignissimos vitae iusto culpa nesciunt provident laudantium corrupti nulla optio sunt esse nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illum magni autem tempore? Accusantium quaerat reprehenderit voluptatibus voluptate, velit cum maiores omnis labore incidunt minima repudiandae quasi facere veritatis ipsam.</p>
+        </article>
+    </main>
+    <script>
+        function mudaTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {            
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
