@@ -1,0 +1,5 @@
+justify-content -> Alinha os itens dentro do eixo principal
+
+align-itens -> vai alinhar os itens dentro do eixo transversal
+
+align-content -> alinha os elementos no eito transversal quando eles estão empacotados
