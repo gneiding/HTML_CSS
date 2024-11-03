@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: menu flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        div.menu {
+            background-color: #0077b6;
+            padding: 15px 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        }
+
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        main.container {
+            justify-content: center;
+        }
+
+        div.opcao {
+            padding: 5px 15px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            background-color: #03045e;
+            border-radius: 6px;
+            transition: 350ms;
+            border: solid 2px #03045e;
+        }
+        div.opcao:hover {
+            color:#03045e;
+            background-color: #00b4d8;
+            border: solid 2px #03045e;
+            box-shadow: 5px 5px 8px rgba(0,0,0,0.25);
+        }
+
+        span.titulo {
+            color: rgb(247, 247, 247);
+            font-size: 1.8rem;
+            text-shadow: 3px 3px rgba(0,0,0,0.25);
+            font-weight: bold;
+            flex: 1 0 200px;
+        }
+
+        section.item {
+            margin: 10px;
+            padding: 15px;
+            background-color:#caf0f8 ;
+            border-radius: 6px;
+            box-shadow: 0 5px 10px 2px rgba(0,0,0,0.15);
+            flex: 0 1 900px;
+         
+        }
+
+        @media (max-width: 849px) {
+            
+            div.menu.container {
+                flex-flow: column;
+            }
+            
+            span.titulo {
+                flex: auto;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container menu">
+        <span class="titulo">Meu site</span>                
+        <div class="opcao">Opção 1</div>
+        <div class="opcao">Opção 2</div>
+        <div class="opcao">Opção 3</div>
+        <div class="opcao">Opção 4</div>
+        <div class="opcao">Opção 5</div>
+        <div class="opcao">Opção 6</div>    
+    </div>
+
+    <main class="container">
+        <section class="item">
+            <h1>Teste de Flexbox</h1>
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo obcaecati repellendus nesciunt voluptatibus. Porro, voluptatem nobis. Magni corrupti, deleniti sint reprehenderit dolor laboriosam distinctio, inventore quas tempora, pariatur odio tenetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti consequatur optio vitae molestiae tenetur doloribus provident saepe ullam maiores, aut aliquid ut. Quo distinctio consequatur corrupti doloribus reprehenderit nesciunt?
+            </p>
+        </section>
+    </main>
+    
+</body>
+</html>
