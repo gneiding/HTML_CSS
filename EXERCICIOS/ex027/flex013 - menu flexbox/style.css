@@ -14,13 +14,39 @@ body {
 
 header {
     color: white;
-    background-color: #03045e;
+    background-color: #0077b6;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header a {
+header > span {
+    font-size: 1.8em;
+    flex: 0 0 200px;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
     color: white;
+    background-color: #03045e;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    transition: 350ms;
+}
+
+header > nav > a:hover {
+    color:#03045e;
+    background-color: white;
 }
 
 main {
@@ -30,3 +56,4 @@ main {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.22);
 }
+
