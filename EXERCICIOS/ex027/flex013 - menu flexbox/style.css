@@ -33,6 +33,7 @@ header > nav {
     justify-content: flex-end;
 }
 
+
 header > nav > a {
     color: white;
     background-color: #03045e;
@@ -51,9 +52,10 @@ header > nav > a:hover {
 
 main {
     background-color: white;
-    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.22);
+    max-width: 900px;
+    margin: 1em auto;
 }
 
